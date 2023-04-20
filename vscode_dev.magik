@@ -1164,7 +1164,8 @@ _pragma(classify_level=debug)
 ##
 _global user_products_root << _if system.os_name _is :windows
 	_then
-		>> "C:\projects\hg\"
+                >> "C:\users\roger\source"
+		#>> "C:\projects\hg\"
 	_else
 		>> system.pathname_down(system.getenv("HOME"), "projects", "hg")
 	_endif
